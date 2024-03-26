@@ -31,15 +31,15 @@ app.minsize(width=500, height=300)
 
 
 heading_label = tki.Label(text="Enter a youtube link")
-heading_label.pack()
+heading_label.place(column=1,row=0)
 
 status_label = tki.Label(text="")
-status_label.pack
+status_label.place()
 
 
 link_entry = tki.Entry()
 link_entry.focus()
-link_entry.pack()
+link_entry.place()
 
 # TODO: add audio only selector
 audio_only_state = tki.BooleanVar()
